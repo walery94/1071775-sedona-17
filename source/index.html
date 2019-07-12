@@ -5,8 +5,101 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__image" src="logo.png" alt="Логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a>Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Седона</h1>
+      <section>
+        <h2>Седона - небольной городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </section>
+      <section class="town">
+        <h2 class="town__title">Настоящий городок</h2>
+        <p class="town__number">№1</p>
+        <p class="town__paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <img class="town__image" src="town.jpg" alt="Город Седона">
+        <ul class="town__list">
+          <li class="town__item">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+          </li>
+          <li class="town__item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="town__item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+        </section>
+        <section class="devils-bridge">
+          <h2 class="devils-bridge__title">Там есть мост Дьявола</h2>
+          <p class="devils-bridge__number">№2</p>
+          <p class="devils-bridge__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="devils-bridge__image" src="bridge.jpg" alt="Мост Дьявола">
+        </section>
+        <section class="advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h2>Небольшая площадь</h2>
+              <p>№3</p>
+              <p>Все интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item">
+              <h2>Красивая дорога</h2>
+              <p>№4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages__item">
+              <h2>Мало туристов</h2>
+              <p>№5</p>
+              <p>Болшенство едем в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </section>
+      <section class="hotel">
+        <h2 class="hotel__title">Заинтересовались?</h2>
+        <p class="hotel__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="hotel__button" href="#">Найти гостиницу</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="main-footer__contacts">
+        <h2 class="main-footer__title">#visitsedona</h2>
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--twitter">Твиттер</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--facebook">Фейсбук</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--youtube">Ютуб</a>
+          </li>
+        </ul>
+        <a href="#">Разработано</a>
+      </section>
+    </footer>
   </body>
 </html>
