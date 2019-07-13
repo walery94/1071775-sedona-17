@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Седона фото</title>
-</head>
-<body>
-<header class="main-header">
-  <a class="main-header__logo">
-    <img class="main-header__image" src="logo.png" alt="Логотип Седона">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a>Главная</a>
-      </li>
-      <li class="main-nav__item">
-        <a>Фото и видео</a>
-      </li>
-      <li class="main-nav__item">
-        <a>Форма отзыва</a>
-      </li>
-      <li class="main-nav__item">
-        <a>Html Academy</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section>
-    <h2>Фото и видео</h2>
-    <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-  </section>
-  <section>
-    <ul>
-      <li>
-        <img src="" alt="">
-        <h3></h3>
-        <p></p>
-        <table>
-          <td>
-          <th></th>
-          <th></th>
-          </td>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона фото</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__image" src="logo.png" alt="Логотип Седона">
+      </a>
+      <nav class="pagination">
+        <button class="pagination__toggle" type="button">Открыть меню</button>
+        <ul class="pagination__list">
+          <li class="pagination__item">>
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">>Фото и видео</a>
+          </li>
+          <li class="pagination__item">
+            <a href="form.html">>Форма отзыва</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">>Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-photo">
+      <section class="photo-video">
+        <h2 class="photo-video__title">Фото и видео</h2>
+        <p class="photo-video__paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+      <section class="photo-1">
+        <img class="photo-1__image" src="nature.jpg" alt="Фото народные просторы">
+        <h2 class="photo-1__title">Народные просторы</h2>
+        <p class="photo-1__parahraph">Автор фото: Борис</p>
+        <table class="photo-1__table table-1">
+          <tr class="table-1__row">
+            <th class="table-1__column-1"></th>
+            <th class="table-1__column-2">1350</th>
+          </tr>
         </table>
-      </li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </section>
-</main>
-<footer class="main-footer">
-  <section class="main-footer__contacts">
-    <h2 class="main-footer__title">#visitsedona</h2>
-    <ul class="main-header__list">
-      <li class="main-header__item">
-        <a class="main-footer__social-link main-footer__social-link--twitter">Твиттер</a>
-      </li>
-      <li class="main-header__item">
-        <a class="main-footer__social-link main-footer__social-link--facebook">Фейсбук</a>
-      </li>
-      <li class="main-header__item">
-        <a class="main-footer__social-link main-footer__social-link--youtube">Ютуб</a>
-      </li>
-    </ul>
-    <a href="#">Разработано</a>
-  </section>
-</footer>
-</body>
+      </section>
+      <section class="photo-2">
+        <img class="photo-2__image" src="plants.jpg" alt="Фото местная растительность">
+        <h2 class="photo-2__title">Местная растительность</h2>
+        <p class="pgoto-2__parahraph">Автор фото: Сергей</p>
+        <table class="photo-2__table table-2">
+          <tr class="table-2__row">
+            <th class="table-2__column-1"></th>
+            <th class="table-2__column-2">143</th>
+          </tr>
+        </table>
+      </section>
+      <section class="photo-3">
+        <img class="photo-3__image" src="road.jpg" alt="Фото дорога на север">
+        <h2 class="photo-3__title">Дорога на север</h2>
+        <p class="pgoto-3__parahraph">Автор фото: Петр</p>
+        <table class="photo-3__table table-3">
+          <tr class="table-3__row">
+            <th class="table-3__column-1"></th>
+            <th class="table-3__column-2">96</th>
+          </tr>
+        </table>
+      </section>
+      <section class="photo-4">
+        <img class="photo-4__image" src="davils-brige.jpg" alt="Фото мост дьявола">
+        <h2 class="photo-4__title">Мост дьявола</h2>
+        <p class="pgoto-4__parahraph">Автор фото: Антон</p>
+        <table class="photo-4__table table-4">
+          <tr class="table-4__row">
+            <th lass="table-4__column-1"></th>
+            <th lass="table-4__column-2">254</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="main-footer__contacts">
+        <h2 class="main-footer__title">#visitsedona</h2>
+        <ul class="main-header__list">
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--twitter">Твиттер</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--facebook">Фейсбук</a>
+          </li>
+          <li class="main-header__item">
+            <a class="main-footer__social-link main-footer__social-link--youtube">Ютуб</a>
+          </li>
+        </ul>
+        <a class="copyright" href="#">Разработано</a>
+      </section>
+    </footer>
+  </body>
 </html>
