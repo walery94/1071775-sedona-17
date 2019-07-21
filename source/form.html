@@ -32,83 +32,83 @@
         <img class="main-header__text" src="img/text-sedona-index.svg" alt="Седона текст" width="281" height="214">
       </div>
     </header>
-    <main class="main-form">
+    <main class="content-form">
       <h1 class="visually-hidden">Форма отзыва</h1>
-      <section class="review">
-        <h2 class="review__title">Оставьте свой отзыв</h2>
-        <p class="review__paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="main-form">
+        <h2 class="main-form__review-title">Оставьте свой отзыв</h2>
+        <p class="main-form__review-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="main-form__form">
+          <fieldset class="personal-info">
+            <legend class="personal-info__title">Представьтесь:</legend>
+            <ul class="personal-info__list">
+              <li class="personal-info__item">
+                <label class="personal-info__label" for="name">Имя*:</label>
+                <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр">
+              </li>
+              <li class="personal-info__item">
+                <label class="personal-info__lanel" for="surname">Фамилия*:</label>
+                <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов">
+              </li>
+              <li class="personal-info__item">
+                <label class="personal-info__label" for="patronymic">Отчество:</label>
+                <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts-info">
+            <legend class="contacts-info__title">Контактная информация</legend>
+            <ul class="contacts-info__list">
+              <li class="contacts-info__item">
+                <label class="contacts-info__label" for="phone">Контактный телефон*:</label>
+                <input class="contacts-info__input contacts-info__input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              </li>
+              <li class="contacts-info__item">
+                <label class="contacts-info__label" for="email">Электронная почта*:</label>
+                <input class="contacts-info__input contacts-info__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="impression-info">
+            <legend class="impression-info__title">Ваше общее впечатление:</legend>
+            <ul class="impression-info__list">
+              <li class="impression-info__item">
+                <input class="impression-info__input" type="radio" id="positive" name="impression" value="positive">
+                <label class="impression-info__label" for="positive">Скорее положительное</label>
+              </li>
+              <li class="impression-info__item">
+                <input class="impression-info__input" type="radio" id="negative" name="impression" value="negative">
+                <label class="impression-info__label" for="negative">Скорее отрицательное</label>
+              </li>
+              <li class="impression-info__item">
+                <input class="impression-info__input" type="radio" id="difficult" name="impression" value="difficult">
+                <label class="impression-info__label" for="difficult">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="atractions-info">
+            <legend class="atractions-info__title">Посещенные достопримечательности</legend>
+            <ul class="atractions-info__list">
+              <li class="atractions-info__item">
+                <input class="atractions-info__input" type="checkbox" id="bridge" name="atractions" value="bridge">
+                <label class="atractions-info__label" for="bridge">Мост Дьявола</label>
+              </li>
+              <li class="atractions-info__item">
+                <input class="atractions-info__input" type="checkbox" id="mount" name="atractions" value="mount">
+                <label class="atractions-info__label" for="mount">Гора-Колокол</label>
+              </li>
+              <li class="atractions-info__item">
+                <input class="atractions-info__input" type="checkbox" id="park" name="atractions" value="park">
+                <label class="atractions-info__label" for="park">Слайд-парк</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="opinion-info">
+            <label class="opinion-info__title">Опишите свои эмоции</label>
+            <textarea class="opinion-info__texarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
+          </p>
+          <input class="main-form__input" type="submit" value="Отправить отзыв">
+        </form>
       </section>
-      <form class="main-form__form">
-        <fieldset class="personal-info">
-          <legend class="personal-info__title">Представьтесь:</legend>
-          <ul class="personal-info__list">
-            <li class="personal-info__item">
-              <label class="personal-info__label" for="name">Имя*:</label>
-              <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр">
-            </li>
-            <li class="personal-info__item">
-              <label class="personal-info__lanel" for="surname">Фамилия*:</label>
-              <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов">
-            </li>
-            <li class="personal-info__item">
-              <label class="personal-info__label" for="patronymic">Отчество:</label>
-              <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contacts-info">
-          <legend class="contacts-info__title">Контактная информация</legend>
-          <ul class="contacts-info__list">
-            <li class="contacts-info__item">
-              <label class="contacts-info__label" for="phone">Контактный телефон*:</label>
-              <input class="contacts-info__input contacts-info__input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон">
-            </li>
-            <li class="contacts-info__item">
-              <label class="contacts-info__label" for="email">Электронная почта*:</label>
-              <input class="contacts-info__input contacts-info__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="impression-info">
-          <legend class="impression-info__title">Ваше общее впечатление:</legend>
-          <ul class="impression-info__list">
-            <li class="impression-info__item">
-              <input class="impression-info__input" type="radio" id="positive" name="impression" value="positive">
-              <label class="impression-info__label" for="positive">Скорее положительное</label>
-            </li>
-            <li class="impression-info__item">
-              <input class="impression-info__input" type="radio" id="negative" name="impression" value="negative">
-              <label class="impression-info__label" for="negative">Скорее отрицательное</label>
-            </li>
-            <li class="impression-info__item">
-              <input class="impression-info__input" type="radio" id="difficult" name="impression" value="difficult">
-              <label class="impression-info__label" for="difficult">Затрудняюсь ответить</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="atractions-info">
-          <legend class="atractions-info__title">Посещенные достопримечательности</legend>
-          <ul class="atractions-info__list">
-            <li class="atractions-info__item">
-              <input class="atractions-info__input" type="checkbox" id="bridge" name="atractions" value="bridge">
-              <label class="atractions-info__label" for="bridge">Мост Дьявола</label>
-            </li>
-            <li class="atractions-info__item">
-              <input class="atractions-info__input" type="checkbox" id="mount" name="atractions" value="mount">
-              <label class="atractions-info__label" for="mount">Гора-Колокол</label>
-            </li>
-            <li class="atractions-info__item">
-              <input class="atractions-info__input" type="checkbox" id="park" name="atractions" value="park">
-              <label class="atractions-info__label" for="park">Слайд-парк</label>
-            </li>
-          </ul>
-        </fieldset>
-        <section class="opinion-info">
-          <legend class="opinion-info__title">Опишите свои эмоции</legend>
-          <textarea class="opinion-info__texarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
-        </section>
-        <input class="main-form__input" type="submit" value="Отправить отзыв">
-      </form>
     </main>
     <footer class="main-footer">
       <b class="main-footer__title">#visitsedona</b>
