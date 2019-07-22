@@ -1,6 +1,4 @@
 .navigation {
-  //display: none;
-  //margin-bottom: 55px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
@@ -24,4 +22,29 @@
 
 .navigation__link {
   color: @text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation {
+    padding-left: 26px;
+    padding-right: 26px;
+    background-color: #ffffff;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  .navigation__link {
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }

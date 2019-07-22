@@ -25,14 +25,34 @@
 }
 
 .main-footer__item {
+  width: 46px;
+  height: 46px;
   margin-right: 10px;
+  background-color: @background-color;
 }
 
-.main-footer__copyright {
+.main-footer__developed {
   display: block;
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    margin-left: 119px;
+    margin-right: 119px;
+  }
 }
