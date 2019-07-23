@@ -72,6 +72,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .advantages__flex-container {
     display: flex;
     margin-bottom: 50px;
@@ -89,18 +94,24 @@
     }
   }
 
-  .advantages__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .advantages__item {
     border-bottom: none;
 
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 100%;
+    }
+
     &--gray {
-      //width: 159px;
-      //margin: 0 auto;
+      flex-grow: 1;
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+
+    &--gray h2,
+    &--gray p {
+      margin: 0 auto;
+      width: 159px;
     }
   }
 }
@@ -108,5 +119,11 @@
 @media (min-width: @desktop-width) {
   .advantages__inner-wrapper {
     width: 400px;
+  }
+
+  &--gray h2,
+  &--gray p {
+      margin: 0 auto;
+      width: 285px;
   }
 }
