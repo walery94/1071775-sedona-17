@@ -25,6 +25,16 @@
   }
 }
 
+.advantages__image-city {
+  margin-bottom: 40px;
+}
+
+.advantages__image-bridge,
+.advantages__image-city {
+  display: block;
+  width: 100%;
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 15px;
@@ -104,15 +114,29 @@
 
     &--gray {
       flex-grow: 1;
-      padding-top: 44px;
-      padding-bottom: 44px;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
     &--gray h2,
     &--gray p {
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
       width: 159px;
     }
+  }
+
+  .advantages__image-city {
+    margin-bottom: 0;
+  }
+
+  .advantages__image-bridge,
+  .advantages__image-city {
+    height: 256px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
   }
 }
 
@@ -123,7 +147,8 @@
 
   &--gray h2,
   &--gray p {
-      margin: 0 auto;
-      width: 285px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 262px;
   }
 }
