@@ -1,7 +1,10 @@
 .main-footer {
   box-sizing: border-box;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .main-footer__title {
@@ -19,25 +22,42 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  margin-bottom: 45px;
   padding: 0;
+  padding-bottom: 45px;
   list-style: none;
 }
 
 .main-footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 46px;
   margin-right: 10px;
   background-color: @background-color;
 }
 
+.main-footer__social-icon {
+  fill: #ffffff;
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
 .main-footer__developed {
   display: block;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  padding-right: 11px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-footer__html-academy-logo {
+  margin-top: -5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -45,14 +65,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer {
-    margin-left: 119px;
-    margin-right: 119px;
+    padding-left: 119px;
+    padding-right: 119px;
   }
 }
