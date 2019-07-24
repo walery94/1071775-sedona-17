@@ -1,0 +1,154 @@
+.advantages__inner-wrapper {
+  min-width: 320px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: @background-color;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.advantages__item {
+  list-style: none;
+  border-bottom: 1px solid #d6d6d6;
+
+  &--gray {
+    background-color: #eeeeee;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.advantages__image-city {
+  margin-bottom: 40px;
+}
+
+.advantages__image-bridge,
+.advantages__image-city {
+  display: block;
+  width: 100%;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-top: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--blue {
+    margin-bottom: 20px;
+    padding-top: 60px;
+    color: @text-color;
+  }
+}
+
+.advantages__number {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--blue {
+    color: @text-color;
+  }
+}
+
+.advantages__paragraph {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--blue {
+    padding-bottom: 40px;
+    color: @text-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__flex-container {
+    display: flex;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .advantages__inner-wrapper {
+    width: 256px;
+
+    &--brige {
+      order: 1;
+    }
+  }
+
+  .advantages__item {
+    border-bottom: none;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 100%;
+    }
+
+    &--gray {
+      width: 33.3%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &--gray h2,
+    &--gray p {
+      margin-left: auto;
+      margin-right: auto;
+      width: 159px;
+    }
+  }
+
+  .advantages__image-city {
+    margin-bottom: 0;
+  }
+
+  .advantages__image-bridge,
+  .advantages__image-city {
+    height: 256px;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__inner-wrapper {
+    width: 400px;
+  }
+
+  &--gray h2,
+  &--gray p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 262px;
+  }
+}
