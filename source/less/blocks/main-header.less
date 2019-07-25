@@ -12,6 +12,29 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+    fill: #81b3d2;
+  }
+}
+
+.main-header__toggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-image: url("../../img/icon-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  &--close {
+    top: 20px;
+    background-image: url("../../img/icon-cross.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
   }
 }
 
@@ -55,8 +78,12 @@
     }
   }
 
+  .main-header__toggle {
+    display: none;
+  }
+
   .main-header__logo {
-    margin-top: -102px;
+    margin-top: -90px;
   }
 
   .main-header__banner {

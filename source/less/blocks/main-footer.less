@@ -27,7 +27,7 @@
   list-style: none;
 }
 
-.main-footer__item {
+.main-footer__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,10 +35,27 @@
   height: 46px;
   margin-right: 10px;
   background-color: @background-color;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .main-footer__social-icon {
   fill: #ffffff;
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .main-footer__copyright {
@@ -58,6 +75,15 @@
 
 .main-footer__html-academy-logo {
   margin-top: -5px;
+
+  &:hover {
+    fill: #81b3d2;
+
+    &:active {
+      fill: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
