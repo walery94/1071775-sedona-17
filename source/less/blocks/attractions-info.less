@@ -1,0 +1,70 @@
+.attractions-info {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.attractions-info__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.attractions-info__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.attractions-info__label {
+  margin-bottom: 45px;
+  position: relative;
+  display: block;
+  padding-left: 79px;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -12px;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
+  }
+}
+
+.attractions-info__input {
+  display: none;
+
+  &:checked + .attractions-info__label::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 4px;
+    width: 24px;
+    height: 16px;
+    background-image: url("../../img/icon-tick.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover + .attractions-info__label::before {
+    background-color: #e5e5e5;
+  }
+
+  &:checked:active + .attractions-info__label::after {
+    opacity: 0.3;
+  }
+
+  &:active + .attractions-info__label::before,
+  &:focus + .attractions-info__label::before {
+    background-color: #d5d5d5;
+  }
+}

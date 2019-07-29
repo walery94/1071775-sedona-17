@@ -8,11 +8,10 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button" aria-label="Открыть меню"></button>
+      <nav class="navigation navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link--active">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="photo.html">Фото и видео</a>
@@ -25,7 +24,8 @@
           </li>
         </ul>
       </nav>
-      <a class="main-header__logo">
+      <button class="main-header__toggle main-header__toggle--close" type="button" aria-label="Открыть меню"></button>
+      <a class="main-header__logo" href="#">
         <img class="main-header__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
       </a>
       <div class="main-header__banner">
@@ -36,11 +36,9 @@
       <h1 class="visually-hidden">Город Седона</h1>
       <section class="main">
         <h2 class="visually-hidden">Седона</h2>
-        <div class="main__wrapper">
-          <b class="main__slogan">Седона - небольной городок в Аризоне, заслуживающий большего!</b>
-          <p class="main__advantage">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-        </div>
-        <ol class="main__list advantages__list">
+        <b class="main__slogan">Седона - небольной городок в Аризоне, заслуживающий большего!</b>
+        <p class="main__advantage">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <ol class="main__list advantages">
           <li class="advantages__item">
             <div class="advantages__flex-container">
               <div class="advantages__inner-wrapper">
@@ -51,15 +49,15 @@
                 <img class="advantages__image-city" src="img/main-city-mobile@1x.jpg" alt="Город Седона" width="320" height="260">
             </div>
             <ul class="advantages__inner-list inner-list">
-              <li class="inner-list__item">
+              <li class="inner-list__item inner-list__item--house">
                 <h3 class="inner-list__title">Жилье</h3>
                 <p class="inner-list__paragraph">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
               </li>
-              <li class="inner-list__item">
+              <li class="inner-list__item inner-list__item--gift">
                 <h3 class="inner-list__title">Сувениры</h3>
                 <p class="inner-list__paragraph">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="inner-list__item">
+              <li class="inner-list__item inner-list__item--food">
                 <h3 class="inner-list__title">Еда</h3>
                 <p class="inner-list__paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
@@ -67,7 +65,7 @@
             </li>
             <li class="advantages__item">
               <div class="advantages__flex-container">
-                <div class="advantages__inner-wrapper advantages__inner-wrapper--brige">
+                <div class="advantages__inner-wrapper advantages__inner-wrapper--bridge">
                   <h2 class="advantages__title advantages__title--blue">Там есть мост Дьявола</h2>
                   <p class="advantages__number advantages__number--blue">— №2 —</p>
                   <p class="advantages__paragraph advantages__paragraph--blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -88,14 +86,14 @@
           <li class="advantages__item advantages__item--gray">
             <h2 class="advantages__title">Мало туристов</h2>
             <p class="advantages__number">— №5 —</p>
-            <p class="advantages__paragraph">Болшенство едем в Гранд Каньон и толпится там</p>
+            <p class="advantages__paragraph">Болшенство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="hotel-search">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
         <p class="hotel-search__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="hotel-search__link" href="#">Найти гостиницу</a>
+        <a class="hotel-search__link" href="#" target="_blank">Найти гостиницу</a>
       </section>
     </main>
     <footer class="main-footer">

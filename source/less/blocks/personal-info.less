@@ -1,7 +1,9 @@
-.personal-info__fieldset {
+.personal-info {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .personal-info__title {
@@ -21,4 +23,39 @@
 
 .personal-info__item {
   margin-bottom: 20px;
+}
+
+.personal-info__block {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.personal-info__label {
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.personal-info__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 58px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    border: solid 4px #e5e5e5;
+    background-color: #ffffff;
+  }
 }
