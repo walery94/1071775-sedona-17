@@ -42,29 +42,39 @@
             <legend class="personal-info__title">Представьтесь:</legend>
             <ul class="personal-info__list">
               <li class="personal-info__item">
-                <label class="personal-info__label" for="name">Имя*:</label>
-                <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр">
+                <p class="personal-info__block">
+                  <label class="personal-info__label" for="name">Имя*:</label>
+                  <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр">
+                </p>
               </li>
               <li class="personal-info__item">
-                <label class="personal-info__lanel" for="surname">Фамилия*:</label>
-                <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов">
+                <p class="personal-info__block">
+                  <label class="personal-info__label" for="surname">Фамилия*:</label>
+                  <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов">
+                </p>
               </li>
               <li class="personal-info__item">
-                <label class="personal-info__label" for="patronymic">Отчество:</label>
-                <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+                <p class="personal-info__block">
+                  <label class="personal-info__label" for="patronymic">Отчество:</label>
+                  <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
+                </p>
               </li>
             </ul>
           </fieldset>
           <fieldset class="contacts-info">
-            <legend class="contacts-info__title">Контактная информация</legend>
+            <legend class="contacts-info__title">Контактная информация:</legend>
             <ul class="contacts-info__list">
               <li class="contacts-info__item">
-                <label class="contacts-info__label" for="phone">Контактный телефон*:</label>
-                <input class="contacts-info__input contacts-info__input--phone" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                <p class="contacts-info__block contacts-info__block--phone">
+                  <label class="contacts-info__label" for="phone">Контактный телефон*:</label>
+                  <input class="contacts-info__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                </p>
               </li>
               <li class="contacts-info__item">
-                <label class="contacts-info__label" for="email">Электронная почта*:</label>
-                <input class="contacts-info__input contacts-info__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
+                <p class="contacts-info__block contacts-info__block--email">
+                  <label class="contacts-info__label" for="email">Электронная почта*:</label>
+                  <input class="contacts-info__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+                </p>
               </li>
             </ul>
           </fieldset>
@@ -85,28 +95,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="atractions-info">
-            <legend class="atractions-info__title">Посещенные достопримечательности</legend>
-            <ul class="atractions-info__list">
-              <li class="atractions-info__item">
-                <input class="atractions-info__input" type="checkbox" id="bridge" name="atractions" value="bridge">
-                <label class="atractions-info__label" for="bridge">Мост Дьявола</label>
+          <fieldset class="attractions-info">
+            <legend class="attractions-info__title">Посещенные достопримечательности:</legend>
+            <ul class="attractions-info__list">
+              <li class="attractions-info__item">
+                <input class="attractions-info__input" type="checkbox" id="bridge" name="attractions" value="bridge">
+                <label class="attractions-info__label" for="bridge">Мост Дьявола</label>
               </li>
-              <li class="atractions-info__item">
-                <input class="atractions-info__input" type="checkbox" id="mount" name="atractions" value="mount">
-                <label class="atractions-info__label" for="mount">Гора-Колокол</label>
+              <li class="attractions-info__item">
+                <input class="attractions-info__input" type="checkbox" id="mount" name="attractions" value="mount">
+                <label class="attractions-info__label" for="mount">Гора-Колокол</label>
               </li>
-              <li class="atractions-info__item">
-                <input class="atractions-info__input" type="checkbox" id="park" name="atractions" value="park">
-                <label class="atractions-info__label" for="park">Слайд-парк</label>
+              <li class="attractions-info__item">
+                <input class="attractions-info__input" type="checkbox" id="park" name="attractions" value="park">
+                <label class="attractions-info__label" for="park">Слайд-парк</label>
               </li>
             </ul>
           </fieldset>
           <p class="opinion-info">
-            <label class="opinion-info__title">Опишите свои эмоции</label>
+            <label class="opinion-info__title">Опишите свои эмоции:</label>
             <textarea class="opinion-info__texarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
-          <input class="main-form__input" type="submit" value="Отправить отзыв">
+          <input class="main-form__button" type="submit" value="Отправить отзыв">
         </form>
       </section>
     </main>

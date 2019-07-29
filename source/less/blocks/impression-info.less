@@ -1,0 +1,70 @@
+.impression-info {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.impression-info__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.impression-info__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.impression-info__label {
+  margin-bottom: 45px;
+  line-height: 26px;
+  position: relative;
+  display: block;
+  padding-left: 79px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -12px;
+    width: 55px;
+    height: 55px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+}
+
+.impression-info__input {
+  display: none;
+
+  &:checked + .impression-info__label::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 5px;
+    width: 21px;
+    height: 21px;
+    background-color: #333333;
+    border-radius: 50%;
+  }
+
+  &:hover + .impression-info__label::before {
+    background-color: #e5e5e5;
+  }
+
+  &:checked:active + .impression-info__label::after {
+    opacity: 0.3;
+  }
+
+  &:active + .impression-info__label::before,
+  &:focus + .impression-info__label::before {
+    background-color: #d5d5d5;
+  }
+}
