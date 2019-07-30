@@ -26,7 +26,11 @@
       </nav>
       <button class="main-header__toggle main-header__toggle--close" type="button" aria-label="Открыть меню"></button>
       <a class="main-header__logo" href="#">
-        <img class="main-header__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+        </picture>
       </a>
       <div class="main-header__banner main-header__banner--inner-page">
         <img class="main-header__text" src="img/text-sedona.svg" alt="Седона текст" width="229" height="39">
@@ -40,7 +44,11 @@
         <ul class="main-photo__list photo-gallery">
           <li class="photo-gallery__item photo-gallery__item--big">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image photo-gallery__image--big" src="img/photo-sunset-mobile@1x.jpg" alt="Фото народные просторы" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg">
+                <source media="(min-width: 768px)" src="img/photo-sunset-tablet@1x.jpg" srcset="img/photo-sunset-tablet@2x.jpg">
+                <img class="photo-gallery__image photo-gallery__image--big" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg" alt="Фото народные просторы" width="280" height="280">
+              </picture>
             </a>
             <div class="photo-gallery__flex-container">
               <div class="photo-gallery__author-wrapper">
@@ -52,7 +60,11 @@
           </li>
           <li class="photo-gallery__item photo-gallery__item--mini">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-cactus-mobile@1x.jpg" alt="Фото местная растительность" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg">
+                <source media="(min-width: 768px)" src="img/photo-cactus-tablet@1x.jpg" srcset="img/photo-cactus-tablet@2x.jpg">
+                <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg" alt="Фото местная растительность" width="280" height="280">
+              </picture>
             </a>
             <div class="photo-gallery__flex-container">
               <div class="photo-gallery__author-wrapper">
@@ -64,7 +76,11 @@
           </li>
           <li class="photo-gallery__item photo-gallery__item--dark-gray photo-gallery__item--mini">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-roads-mobile@1x.jpg" alt="Фото дорога на север" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg">
+                <source media="(min-width: 768px)" src="img/photo-roads-tablet@1x.jpg" srcset="img/photo-roads-tablet@2x.jpg">
+                <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg" alt="Фото дорога на север" width="280" height="280">
+              </picture>
             </a>
             <div class="photo-gallery__flex-container">
               <div class="photo-gallery__author-wrapper">
@@ -76,7 +92,11 @@
           </li>
           <li class="photo-gallery__item photo-gallery__item--mini">
             <a class="photo-gallery__link" href="#">
-              <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-bridge-mobile@1x.jpg" alt="Фото мост дьявола" width="280" height="280">
+              <picture>
+                <source media="(min-width: 1200px)" src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg">
+                <source media="(min-width: 768px)" src="img/photo-bridge-tablet@1x.jpg" srcset="img/photo-bridge-tablet@2x.jpg">
+                <img class="photo-gallery__image photo-gallery__image--mini" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Фото мост дьявола" width="280" height="280">
+              </picture>
             </a>
             <div class="photo-gallery__flex-container">
               <div class="photo-gallery__author-wrapper">

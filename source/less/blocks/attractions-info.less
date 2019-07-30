@@ -42,29 +42,29 @@
 
 .attractions-info__input {
   display: none;
+}
 
-  &:checked + .attractions-info__label::after {
-    content: "";
-    position: absolute;
-    left: 14px;
-    top: 4px;
-    width: 24px;
-    height: 16px;
-    background-image: url("../../img/icon-tick.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
+.attractions-info__input:checked + .attractions-info__label::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 4px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../../img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 
-  &:hover + .attractions-info__label::before {
-    background-color: #e5e5e5;
-  }
+.attractions-info__input:hover + .attractions-info__label::before {
+  background-color: #e5e5e5;
+}
 
-  &:checked:active + .attractions-info__label::after {
-    opacity: 0.3;
-  }
+.attractions-info__input:checked:active + .attractions-info__label::after {
+  opacity: 0.3;
+}
 
-  &:active + .attractions-info__label::before,
-  &:focus + .attractions-info__label::before {
-    background-color: #d5d5d5;
-  }
+.attractions-info__input:active + .attractions-info__label::before,
+.attractions-info__input:focus + .attractions-info__label::before {
+  background-color: #d5d5d5;
 }

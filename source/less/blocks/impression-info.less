@@ -23,11 +23,11 @@
 }
 
 .impression-info__label {
-  margin-bottom: 45px;
-  line-height: 26px;
   position: relative;
   display: block;
+  margin-bottom: 45px;
   padding-left: 79px;
+  line-height: 26px;
 
   &::before {
     content: "";
@@ -43,28 +43,28 @@
 
 .impression-info__input {
   display: none;
+}
 
-  &:checked + .impression-info__label::after {
-    content: "";
-    position: absolute;
-    left: 18px;
-    top: 5px;
-    width: 21px;
-    height: 21px;
-    background-color: #333333;
-    border-radius: 50%;
-  }
+.impression-info__input:checked + .impression-info__label::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 5px;
+  width: 21px;
+  height: 21px;
+  background-color: #333333;
+  border-radius: 50%;
+}
 
-  &:hover + .impression-info__label::before {
-    background-color: #e5e5e5;
-  }
+.impression-info__input:hover + .impression-info__label::before {
+  background-color: #e5e5e5;
+}
 
-  &:checked:active + .impression-info__label::after {
-    opacity: 0.3;
-  }
+.impression-info__input:checked:active + .impression-info__label::after {
+  opacity: 0.3;
+}
 
-  &:active + .impression-info__label::before,
-  &:focus + .impression-info__label::before {
-    background-color: #d5d5d5;
-  }
+.impression-info__input:active + .impression-info__label::before,
+.impression-info__input:focus + .impression-info__label::before {
+  background-color: #d5d5d5;
 }
