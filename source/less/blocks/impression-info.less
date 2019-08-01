@@ -1,4 +1,5 @@
 .impression-info {
+  order: -1;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -67,4 +68,24 @@
 .impression-info__input:active + .impression-info__label::before,
 .impression-info__input:focus + .impression-info__label::before {
   background-color: #d5d5d5;
+}
+
+@media (min-width: @tablet-width) {
+  .impression-info {
+    padding-right: 40px;
+    border: none;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .impression-info__title {
+    margin-bottom: 60px;
+    text-align: left;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression-info {
+    padding-right: 200px;
+  }
 }

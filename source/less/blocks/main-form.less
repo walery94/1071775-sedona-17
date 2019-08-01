@@ -60,6 +60,10 @@
   }
 }
 
+.main-form__required-fields {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-form__review-title {
     width: 439px;
@@ -69,5 +73,44 @@
   .main-form__review-paragraph {
     width: 439px;
     border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-form {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .main-form__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-form__button {
+    width: 324px;
+    margin-bottom: 50px;
+    margin-right: 160px;
+  }
+
+  .main-form__required-fields {
+    display: inline;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .main-form__button {
+    width: 480px;
+    margin-right: 310px;
   }
 }

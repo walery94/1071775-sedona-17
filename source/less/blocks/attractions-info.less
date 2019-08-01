@@ -68,3 +68,72 @@
 .attractions-info__input:focus + .attractions-info__label::before {
   background-color: #d5d5d5;
 }
+
+@media (min-width: @tablet-width) {
+  .attractions-info {
+    border: none;
+  }
+
+  .attractions-info__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .attractions-info__item {
+    width: 240px;
+    margin-bottom: 20px;
+  }
+
+  .attractions-info__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 21px;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 120px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions-info__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .attractions-info__title {
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 215px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+}
