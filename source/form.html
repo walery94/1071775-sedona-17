@@ -25,8 +25,12 @@
         </ul>
       </nav>
       <button class="main-header__toggle main-header__toggle--close" type="button" aria-label="Открыть меню"></button>
-      <a class="main-header__logo">
-        <img class="main-header__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+        </picture>
       </a>
       <div class="main-header__banner main-header__banner--inner-page">
         <img class="main-header__text" src="img/text-sedona.svg" alt="Седона текст" width="229" height="39">
@@ -110,13 +114,18 @@
                 <input class="attractions-info__input" type="checkbox" id="park" name="attractions" value="park">
                 <label class="attractions-info__label" for="park">Слайд-парк</label>
               </li>
+              <li class="attractions-info__item">
+                <input class="attractions-info__input" type="checkbox" id="rocks" name="attractions" value="park">
+                <label class="attractions-info__label" for="rocks">Красные скалы</label>
+              </li>
             </ul>
           </fieldset>
           <p class="opinion-info">
             <label class="opinion-info__title">Опишите свои эмоции:</label>
-            <textarea class="opinion-info__texarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
           <input class="main-form__button" type="submit" value="Отправить отзыв">
+          <p class="main-form__required-fields">* — Обязательные поля</p>
         </form>
       </section>
     </main>
@@ -158,5 +167,19 @@
         </a>
       </div>
     </footer>
+  <section class="modal-error">
+    <h2 class="modal-error__title">Что-то пошло не так!</h2>
+    <p class="modal-error__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal-error__button">ок</button>
+  </section>
+  <section class="modal-sending">
+    <h2 class="modal-sending__title">Ваш отзыв отправлен!</h2>
+    <p class="modal-sending__paragraph">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+    </p>
+    <div class="modal-sending__button-wrapper">
+      <button class="modal-sending__button">Закрыть окно</button>
+    </div>
+  </section>
   </body>
 </html>

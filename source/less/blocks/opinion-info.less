@@ -16,11 +16,79 @@
   text-transform: uppercase;
 }
 
-.opinion-info__texarea {
+.opinion-info__textarea {
+  box-sizing: border-box;
   width: 100%;
   min-height: 160px;
   margin-bottom: 50px;
   padding: 20px;
-  border: none;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .opinion-info__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 137px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .opinion-info {
+    width: 100%;
+  }
+
+  .opinion-info__title {
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 293px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
 }
