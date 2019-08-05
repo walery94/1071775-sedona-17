@@ -1,4 +1,7 @@
 .main-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
@@ -6,7 +9,7 @@
 }
 
 .main-form__review-title {
-  width: 276px;
+  width: 100%;
   margin: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -21,7 +24,7 @@
 }
 
 .main-form__review-paragraph {
-  width: 276px;
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
   margin-left: auto;
@@ -37,27 +40,6 @@
 
 .main-form__button {
   width: 280px;
-  height: 58px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: @text-color;
-  border: none;
-  background-color: @background-color;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-  }
-
-  &--disabled {
-    background-color: #e5e5e5;
-  }
 }
 
 .main-form__required-fields {
