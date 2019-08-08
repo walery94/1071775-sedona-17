@@ -68,15 +68,19 @@
 @media (min-width: @tablet-width) {
   .inner-list {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding-left: 51px;
     padding-right: 51px;
   }
 
   .inner-list__item {
-    width: 155px;
     margin-top: 100px;
     margin-left: 0;
+
+    &--house {
+      width: 156px;
+      margin-right: 99px;
+    }
 
     &--house::before {
       content: "";
@@ -92,18 +96,24 @@
 
     &--gift {
       order: 1;
+      width: 163px;
     }
 
     &--gift::before {
       content: "";
       position: absolute;
       top: -92px;
-      left: 45px;
+      left: 53px;
       width: 75px;
       height: 72px;
       background-image: url("../../img/icon-gift.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
+    }
+
+    &--food {
+      width: 156px;
+      margin-right: 94px;
     }
 
     &--food::before {
@@ -127,7 +137,6 @@
   }
 
   .inner-list__paragraph {
-    width: 162px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -142,10 +151,15 @@
   .inner-list__item {
     width: 252px;
 
+    &--house {
+      width: 252px;
+      margin-right: 130px;
+    }
+
     &--house::before {
       content: "";
       position: absolute;
-      top: -100px;
+      top: -90px;
       left: 90px;
       width: 75px;
       height: 72px;
@@ -154,11 +168,15 @@
       background-repeat: no-repeat;
     }
 
+    &--gift {
+      width: 214px;
+    }
+
     &--gift::before {
       content: "";
       position: absolute;
-      top: -105px;
-      left: 100px;
+      top: -90px;
+      left: 78px;
       width: 75px;
       height: 72px;
       background-image: url("../../img/icon-gift.svg");
@@ -166,16 +184,27 @@
       background-repeat: no-repeat;
     }
 
+    &--food {
+      width: 283px;
+      margin-right: 151px;
+    }
+
     &--food::before {
       content: "";
       position: absolute;
-      top: -100px;
-      left: 90px;
+      top: -86px;
+      left: 106px;
       width: 75px;
       height: 72px;
       background-image: url("../../img/icon-burger.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
+  }
+
+  .inner-list__paragraph {
+    margin-bottom: 83px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

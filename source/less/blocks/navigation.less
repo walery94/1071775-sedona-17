@@ -3,8 +3,12 @@
   background-color: @background-color;
 
   &--no-js {
-    display: block;
+    //display: block;
   }
+}
+
+.navigation__open {
+  display: block;
 }
 
 .navigation__list {
@@ -125,5 +129,28 @@
   .navigation {
     padding-left: 70px;
     padding-right: 70px;
+  }
+
+  .navigation__list {
+    padding-bottom: 30px;
+  }
+
+  .navigation__item {
+    &:first-child {
+      margin-left: 18px;
+      margin-right: 55px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 26%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 35px;
+    }
+
+    &:last-child {
+      margin-right: 3px;
+    }
   }
 }
