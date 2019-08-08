@@ -1,7 +1,7 @@
 .attractions-info {
   width: 280px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 0;
   border: none;
   border-bottom: 1px solid #e5e5e5;
@@ -9,7 +9,7 @@
 
 .attractions-info__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .attractions-info__label {
-  margin-bottom: 45px;
+  margin-bottom: 54px;
   position: relative;
   display: block;
   padding-left: 79px;
@@ -79,7 +79,9 @@
   .attractions-info__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-left: 100px;
+    padding-right: 70px;
+    justify-content: space-between;
   }
 
   .attractions-info__item {
@@ -109,6 +111,17 @@
 
     &::after {
       margin-left: 60px;
+    }
+  }
+
+  .attractions-info__label {
+    margin-bottom: 39px;
+
+    &::before {
+      left: -2px;
+      top: -15px;
+      border: 5px solid #f2f2f2;
+      border-radius: 5px;
     }
   }
 }
