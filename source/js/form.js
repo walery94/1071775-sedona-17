@@ -35,8 +35,12 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    sendingModal.classList.add(".modal-sending__button");
-    errorModal.classList.add(".modal-error__button");
+    if(sendingModal.classList.contains("modal-error__show")) {
+      sendingModal.classList.remove("modal-error__show");
+    }
+    if(errorModal.classList.contains("modal-error__show")) {
+      errorModal.classList.remove("modal-error__show");
+    }
   }
 });
 

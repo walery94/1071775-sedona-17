@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<9d4b6ceb-f0f1-49b2-8797-4efa0a08d5e1>" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
   </head>
   <body>
   <div style="display:none">
@@ -27,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <button class="main-header__toggle main-header__toggle--close" type="button" aria-label="Открыть меню"></button>
+      <button class="main-header__toggle main-header__toggle--no-js" type="button" aria-label="Открыть меню"></button>
       <a class="main-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -120,6 +124,7 @@
       </section>
     </main>
   <section class="map">
+    <div id="map" class="map__yandex"></div>
     <picture>
       <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
