@@ -27,7 +27,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 45px;
+  padding-bottom: 47px;
   list-style: none;
 }
 
@@ -94,23 +94,45 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    &--inner-page {
+    &--photo-page {
       padding-top: 72px;
+    }
+
+    &--form-page {
+      padding-top: 47px;
     }
   }
 
+  .main-footer__title {
+    margin-bottom: 45px;
+  }
+
   .main-footer__developed {
-    padding-bottom: 36px;
+    padding-bottom: 45px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer {
+    padding-top: 28px;
     padding-left: 119px;
     padding-right: 119px;
 
-    &--inner-page {
+    &--photo-page {
       padding-top: 117px;
     }
+
+    &--form-page {
+      padding-top: 50px;
+    }
+  }
+
+  .main-footer__title {
+    margin-bottom: 41px;
+  }
+
+  .main-footer__developed {
+    padding-bottom: 43px;
+    padding-right: 14px;
   }
 }

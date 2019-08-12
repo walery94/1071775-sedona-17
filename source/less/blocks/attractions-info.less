@@ -28,6 +28,7 @@
   position: relative;
   display: block;
   padding-left: 79px;
+  font-weight: 700;
   line-height: 26px;
 
   &::before {
@@ -79,20 +80,20 @@
   .attractions-info__list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 18px;
     padding-left: 100px;
-    padding-right: 70px;
-    justify-content: space-between;
   }
 
   .attractions-info__item {
     width: 240px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+    padding-right: 17px;
   }
 
   .attractions-info__title {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     font-size: 21px;
 
     &::before,
@@ -124,19 +125,37 @@
       border-radius: 5px;
     }
   }
+
+  .attractions-info__input:hover + .attractions-info__label::before {
+    border-color: #e5e5e5;
+  }
+
+  .attractions-info__input:active + .attractions-info__label::before,
+  .attractions-info__input:focus + .attractions-info__label::before {
+    border-color: #d5d5d5;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .attractions-info {
-    width: 1060px;
+    width: 1156px;
   }
 
   .attractions-info__list {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .attractions-info__item {
+    &:nth-child(3) {
+      padding-right: 0;
+    }
   }
 
   .attractions-info__title {
+    justify-content: center;
+    width: 278px;
+
     &::before,
     &::after {
       content: "";

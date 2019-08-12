@@ -66,6 +66,18 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("minify-html", function () {
+  return gulp.src("source/*.html")
+      .pipe(htmlmin({collapseWhitespace: true}))
+      .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify-js", function () {
+  return gulp.src("source/js/*.js")
+      .pipe(jsmin())
+      .pipe(gulp.dest("build/js/"));
+});
+
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -92,7 +104,8 @@ gulp.task("server", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/img/sprite-*.svg", gulp.series("sprite", "html", "refresh"));
-  gulp.watch("source/*.html"), gulp.series("html", "refresh");
+  gulp.watch("source/*.html", gulp.series("html", "minify-html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "minify-js", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -100,5 +113,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify-html", "minify-js"));
 gulp.task("start", gulp.series("build", "server"));

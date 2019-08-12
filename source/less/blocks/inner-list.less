@@ -68,7 +68,7 @@
 @media (min-width: @tablet-width) {
   .inner-list {
     display: flex;
-    //justify-content: space-between;
+    width: 768px;
     padding-left: 51px;
     padding-right: 51px;
   }
@@ -144,6 +144,7 @@
 
 @media (min-width: @desktop-width) {
   .inner-list {
+    width: 1200px;
     padding-left: 72px;
     padding-right: 72px;
   }
@@ -169,14 +170,14 @@
     }
 
     &--gift {
-      width: 214px;
+      width: 215px;
     }
 
     &--gift::before {
       content: "";
       position: absolute;
       top: -90px;
-      left: 78px;
+      left: 74px;
       width: 75px;
       height: 72px;
       background-image: url("../../img/icon-gift.svg");
@@ -185,7 +186,7 @@
     }
 
     &--food {
-      width: 283px;
+      width: 290px;
       margin-right: 151px;
     }
 
@@ -206,5 +207,9 @@
     margin-bottom: 83px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .inner-list__line-break {
+    display: block;
   }
 }
