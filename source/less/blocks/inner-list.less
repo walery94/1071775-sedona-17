@@ -68,7 +68,8 @@
 @media (min-width: @tablet-width) {
   .inner-list {
     display: flex;
-    width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 51px;
     padding-right: 51px;
   }
@@ -144,7 +145,6 @@
 
 @media (min-width: @desktop-width) {
   .inner-list {
-    width: 1200px;
     padding-left: 72px;
     padding-right: 72px;
   }

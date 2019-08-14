@@ -46,20 +46,20 @@
       <section class="main-form">
         <h2 class="main-form__review-title">Оставьте свой отзыв</h2>
         <p class="main-form__review-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="main-form__form">
+        <form class="main-form__form" novalidate>
           <fieldset class="personal-info">
             <legend class="personal-info__title">Представьтесь:</legend>
             <ul class="personal-info__list">
               <li class="personal-info__item">
                 <p class="personal-info__block">
                   <label class="personal-info__label" for="name">Имя*:</label>
-                  <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр">
+                  <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр" required>
                 </p>
               </li>
               <li class="personal-info__item">
                 <p class="personal-info__block">
                   <label class="personal-info__label" for="surname">Фамилия*:</label>
-                  <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов">
+                  <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
                 </p>
               </li>
               <li class="personal-info__item">
@@ -73,17 +73,13 @@
           <fieldset class="contacts-info">
             <legend class="contacts-info__title">Контактная информация:</legend>
             <ul class="contacts-info__list">
-              <li class="contacts-info__item">
-                <p class="contacts-info__block contacts-info__block--phone">
-                  <label class="contacts-info__label" for="phone"><span class="contacts-info__hidden">Контактный</span> телефон*:</label>
-                  <input class="contacts-info__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
-                </p>
+              <li class="contacts-info__item contacts-info__item--phone">
+                <label class="contacts-info__label" for="phone"><span class="contacts-info__hidden">Контактный</span> телефон*:</label>
+                <input class="contacts-info__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
               </li>
-              <li class="contacts-info__item">
-                <p class="contacts-info__block contacts-info__block--email">
-                  <label class="contacts-info__label" for="email">Электронная почта*:</label>
-                  <input class="contacts-info__input" type="email" id="email" name="email" placeholder="Введите e-mail">
-                </p>
+              <li class="contacts-info__item contacts-info__item--email">
+                <label class="contacts-info__label" for="email">Электронная почта*:</label>
+                <input class="contacts-info__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>

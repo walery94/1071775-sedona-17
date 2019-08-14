@@ -26,7 +26,8 @@
     "posthtml-include": "^1.2.0",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "svgo": "^1.3.0"
+    "svgo": "^1.3.0",
+    "gulp-uglify": "^3.0.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -52,6 +53,5 @@
     "node": "8.16"
   },
   "dependencies": {
-    "gulp-uglify": "^3.0.2"
   }
 }

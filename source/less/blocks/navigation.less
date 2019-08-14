@@ -1,5 +1,5 @@
 .navigation {
-  display: block;
+  display: none;
   background-color: @background-color;
 
   &--no-js {
@@ -66,6 +66,7 @@
   .navigation__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 44px;
   }
 
@@ -85,6 +86,19 @@
     }
 
     &:nth-child(3) {
+      margin-right: 37px;
+    }
+
+    &:nth-child(5n) {
+      margin-left: 24px;
+      margin-right: 61px;
+    }
+
+    &:nth-child(6n) {
+      margin-right: 27%;
+    }
+
+    &:nth-child(7n) {
       margin-right: 37px;
     }
 
@@ -138,18 +152,35 @@
   .navigation__item {
     &:first-child {
       margin-left: 21px;
-      margin-right: 60px;
+      margin-right: 139px;
     }
 
     &:nth-child(2) {
-      margin-right: 27%;
+      margin-right: 17%;
     }
 
     &:nth-child(3) {
+      margin-left: 178px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 75px;
+    }
+
+    &:nth-child(5n) {
+      margin-left: 21px;
+      margin-right: 60px;
+    }
+
+    &:nth-child(6n) {
+      margin-right: 27%;
+    }
+
+    &:nth-child(7n) {
       margin-right: 38px;
     }
 
-    &:last-child {
+    &:nth-child(8n) {
       margin-right: 3px;
     }
   }

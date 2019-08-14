@@ -16,7 +16,7 @@ var checkValue = function(input) {
   if (input.value === "") {
     input.style.borderColor = "#e32636";
     return false;
-  }else{
+  } else {
     input.style.borderColor = "#f2f2f2";
     return true;
   }
@@ -24,19 +24,23 @@ var checkValue = function(input) {
 
 form.addEventListener("submit", function(evt) {
   evt.preventDefault();
-  if (!checkValue(myName) || !checkValue(surname) || !checkValue(phone) || !checkValue(email)) {
+  if (!checkValue(myName) && !checkValue(surname) && !checkValue(phone) && !checkValue(email)) {
     errorModal.classList.add("modal-error__show");
   } else {
     sendingModal.classList.add("modal-sending__show");
-    myName.value = surname.value = phone.value = email.value = patronymic.value = "";
+    myName.value = "";
+    surname.value = "";
+    phone.value = "";
+    email.value = "";
+    patronymic.value = "";
   }
 });
 
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if(sendingModal.classList.contains("modal-error__show")) {
-      sendingModal.classList.remove("modal-error__show");
+    if(sendingModal.classList.contains("modal-sending__show")) {
+      sendingModal.classList.remove("modal-sending__show");
     }
     if(errorModal.classList.contains("modal-error__show")) {
       errorModal.classList.remove("modal-error__show");
