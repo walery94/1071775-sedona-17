@@ -50,23 +50,17 @@
           <fieldset class="personal-info">
             <legend class="personal-info__title">Представьтесь:</legend>
             <ul class="personal-info__list">
-              <li class="personal-info__item">
-                <p class="personal-info__block">
-                  <label class="personal-info__label" for="name">Имя*:</label>
-                  <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр" required>
-                </p>
+              <li class="personal-info__item personal-info__block">
+                <label class="personal-info__label" for="name">Имя*:</label>
+                <input class="personal-info__input" type="text" id="name" name="name" placeholder="Петр" required>
               </li>
-              <li class="personal-info__item">
-                <p class="personal-info__block">
-                  <label class="personal-info__label" for="surname">Фамилия*:</label>
-                  <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
-                </p>
+              <li class="personal-info__item personal-info__block">
+                <label class="personal-info__label" for="surname">Фамилия*:</label>
+                <input class="personal-info__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
               </li>
-              <li class="personal-info__item">
-                <p class="personal-info__block">
-                  <label class="personal-info__label" for="patronymic">Отчество:</label>
-                  <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
-                </p>
+              <li class="personal-info__item personal-info__block">
+                <label class="personal-info__label" for="patronymic">Отчество:</label>
+                <input class="personal-info__input" type="text" id="patronymic" name="patronymic" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -123,7 +117,7 @@
           </fieldset>
           <p class="opinion-info">
             <label class="opinion-info__title">Опишите свои эмоции:</label>
-            <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги" required></textarea>
           </p>
           <input class="button main-form__button" type="submit" value="Отправить отзыв">
           <p class="main-form__required-fields">* — Обязательные поля</p>

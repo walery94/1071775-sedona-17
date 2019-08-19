@@ -73,7 +73,7 @@ gulp.task("minify-js", function () {
       .pipe(gulp.dest("build/js/"));
 });
 
-gulp.task("copy", function() {
+gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",

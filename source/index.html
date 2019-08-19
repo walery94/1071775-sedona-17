@@ -7,8 +7,8 @@
     <link rel="preload" href="fonts/ptsans.woff" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d4b6ceb-f0f1-49b2-8797-4efa0a08d5e1" type="text/javascript"></script>
-    <script src="js/map.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9d4b6ceb-f0f1-49b2-8797-4efa0a08d5e1"></script>
+    <script src="js/map.js"></script>
   </head>
   <body>
   <div style="display:none">
@@ -18,8 +18,8 @@
       <nav class="navigation navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--active">Главная</a>
-          </li>
+          <a class="navigation__link navigation__link--active">Главная</a>
+        </li>
           <li class="navigation__item">
             <a class="navigation__link" href="photo.html">Фото и видео</a>
           </li>
@@ -57,14 +57,16 @@
                 <p class="advantages__number advantages__number--blue advantages__number--city">– №1 –</p>
                 <p class="advantages__paragraph advantages__paragraph--blue advantages__paragraph--city">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
-                <img class="advantages__image-city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город Седона" width="320" height="260">
-              </picture>
+              <div class="advantages__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="advantages__image-city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город Седона" width="320" height="260">
+                </picture>
+              </div>
             </div>
             <ul class="advantages__inner-list inner-list">
               <li class="inner-list__item inner-list__item--house">
@@ -88,6 +90,7 @@
                   <p class="advantages__number advantages__number--blue advantages__number--bridge">– №2 –</p>
                   <p class="advantages__paragraph advantages__paragraph--blue advantages__paragraph--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
+                <div class="advantages__picture-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
@@ -96,23 +99,24 @@
                   <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image-bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
                 </picture>
+                </div>
               </div>
             </li>
           <li class="advantages__item advantages__item--gray">
             <h2 class="advantages__title advantages__title--gray">Небольшая площадь</h2>
-            <p class="advantages__number">– №3 –</p>
+            <p class="advantages__number advantages__number--gray">– №3 –</p>
             <p class="advantages__paragraph advantages__paragraph--gray">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--gray">
             <div class="advantages__inner-wrapper--gray">
               <h2 class="advantages__title advantages__title--gray">Красивая дорога</h2>
-              <p class="advantages__number">– №4 –</p>
-              <p class="advantages__paragraph advantages__paragraph--gray">Ехать в Седону из Лас-Вегаса совсем <span class="advantages__line-break">не скучно!</span></p>
+              <p class="advantages__number advantages__number--gray">– №4 –</p>
+              <p class="advantages__paragraph advantages__paragraph--gray">Ехать в Седону из Лас&#160;-&#160;Вегаса совсем <span class="advantages__line-break">не скучно!</span></p>
             </div>
           </li>
           <li class="advantages__item advantages__item--gray">
             <h2 class="advantages__title advantages__title--gray">Мало туристов</h2>
-            <p class="advantages__number">– №5 –</p>
+            <p class="advantages__number advantages__number--gray">– №5 –</p>
             <p class="advantages__paragraph advantages__paragraph--gray">Болшенство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
@@ -126,6 +130,7 @@
       </section>
     </main>
   <section class="map">
+     <h2 class="visually-hidden">Карта</h2>
     <div id="map" class="map__yandex"></div>
     <picture>
       <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -133,10 +138,10 @@
       <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
       <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-      <img src="img/bg-map-tablet@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
+      <img class="map__image" src="img/bg-map-tablet@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
     </picture>
   </section>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--index-page">
       <b class="main-footer__title">#visitsedona</b>
       <ul class="main-footer__list">
         <li class="main-footer__item">

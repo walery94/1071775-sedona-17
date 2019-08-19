@@ -24,7 +24,7 @@ var checkValue = function(input) {
 
 form.addEventListener("submit", function(evt) {
   evt.preventDefault();
-  if (!checkValue(myName) && !checkValue(surname) && !checkValue(phone) && !checkValue(email)) {
+  if (!checkValue(myName) || !checkValue(surname) || !checkValue(phone) || !checkValue(email)) {
     errorModal.classList.add("modal-error__show");
   } else {
     sendingModal.classList.add("modal-sending__show");

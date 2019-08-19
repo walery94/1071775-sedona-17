@@ -5,7 +5,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 26px;
     background-image: url("../../img/bg-intro-triangle-mobile.svg");
@@ -51,13 +51,11 @@
 
 .main-header__image {
   position: absolute;
-  top: 0;
 }
 
 .main-header__banner {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-width: 320px;
   height: 388px;
   margin-top: -25px;
@@ -70,10 +68,21 @@
   &--inner-page {
     min-width: 229px;
     height: 155px;
+    background-position: 0 0;
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.main-header__text {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &--inner-page {
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 
@@ -82,7 +91,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       width: 100%;
       height: 57px;
       background-image: url("../../img/bg-intro-triangle-tablet.svg");
@@ -100,6 +109,10 @@
     margin-top: -90px;
   }
 
+  .main-header__image {
+    top: 0;
+  }
+
   .main-header__banner {
     min-width: 768px;
     min-height: 518px;
@@ -110,21 +123,24 @@
 
     &--inner-page {
       min-height: 290px;
+      background-position: 0 -230px;
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
     }
+  }
 
-    .main-header__text {
-      position: absolute;
-      top: 133px;
-      width: 460px;
-      height: 350px;
+  .main-header__text {
+    position: absolute;
+    top: 133px;
+    width: 460px;
+    height: 350px;
+    padding-left: 154px;
+    padding-right: 154px;
 
-      &--inner-page {
-        top: 13px;
-      }
+    &--inner-page {
+      top: 15px;
     }
   }
 }
@@ -154,6 +170,19 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/bg-back-desktop@2x.jpg");
+    }
+
+    &--inner-page {
+      background-position: 0 -228px;
+    }
+  }
+
+  .main-header__text {
+    padding-left: 370px;
+    padding-right: 370px;
+
+    &--inner-page {
+      top: 20px;
     }
   }
 

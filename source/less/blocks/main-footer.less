@@ -1,13 +1,20 @@
 .main-footer {
   box-sizing: border-box;
-  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
   opacity: 0.9;
 
-  &--inner-page {
-    padding-top: 79px;
+  &--index-page {
+    padding-top: 30px;
+  }
+
+  &--photo-page {
+    padding-top: 81px;
+  }
+
+  &--form-page {
+    padding-top: 74px;
   }
 }
 
@@ -17,6 +24,7 @@
   margin-bottom: 25px;
   padding: 0;
   font-size: 21px;
+  font-weight: 700;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -42,7 +50,7 @@
   align-items: center;
   width: 46px;
   height: 46px;
-  margin-right: 5px;
+  margin-right: 7px;
   background-color: @background-color;
 
   &:hover {
@@ -95,16 +103,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
 
+    &--index-page {
+      padding-top: 25px;
+    }
+
     &--photo-page {
-      padding-top: 72px;
+      padding-top: 65px;
     }
 
     &--form-page {
-      padding-top: 47px;
+      padding-top: 41px;
     }
   }
 
@@ -119,16 +130,19 @@
 
 @media (min-width: @desktop-width) {
   .main-footer {
-    padding-top: 28px;
     padding-left: 119px;
     padding-right: 119px;
 
+    &--index-page {
+      padding-top: 20px;
+    }
+
     &--photo-page {
-      padding-top: 117px;
+      padding-top: 110px;
     }
 
     &--form-page {
-      padding-top: 50px;
+      padding-top: 45px;
     }
   }
 
