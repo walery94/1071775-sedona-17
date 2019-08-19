@@ -138,30 +138,45 @@
 
 @media (min-width: @desktop-width) {
   .attractions-info {
-    width: 1156px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .attractions-info__list {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 15px;
+    padding-left: 0;
   }
 
   .attractions-info__item {
-    &:nth-child(3) {
+    width: 201px;
+
+    &:first-child {
+      padding-right: 29px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 30px;
+    }
+
+    &:nth-child(4) {
       padding-right: 0;
     }
   }
 
   .attractions-info__title {
-    justify-content: center;
-    width: 278px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 
     &::before,
     &::after {
       content: "";
       flex-grow: 1;
       flex-shrink: 0;
-      width: 215px;
+      width: 290px;
       height: 1px;
       background-color: #e5e5e5;
     }

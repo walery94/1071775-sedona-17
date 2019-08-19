@@ -93,8 +93,10 @@
 
   .contacts-info__title {
     display: flex;
-    margin-bottom: 22px;
     align-items: center;
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 21px;
 
     &::before,
@@ -124,8 +126,10 @@
 
 @media (min-width: @desktop-width) {
   .contacts-info {
-    width: 960px;
+    width: 100%;
     margin-bottom: 22px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .contacts-info__item {
@@ -141,6 +145,7 @@
   }
 
   .contacts-info__title {
+    //width: 960px;
     margin-bottom: 65px;
     margin-left: auto;
     margin-right: auto;
@@ -152,6 +157,8 @@
       flex-shrink: 0;
       width: 281px;
       height: 1px;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #e5e5e5;
     }
 
