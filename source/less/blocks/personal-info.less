@@ -3,6 +3,8 @@
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -14,6 +16,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .personal-info__list {
@@ -46,10 +49,11 @@
 }
 
 .personal-info__input {
+  flex-grow: 1;
   box-sizing: border-box;
-  width: 100%;
+  width: 100px;
   height: 58px;
-  padding-left: 20px;
+  padding-left: 17px;
   padding-right: 20px;
   font-weight: 700;
   border: 4px solid #f2f2f2;
@@ -89,7 +93,7 @@
 @media (min-width: @desktop-width) {
   .personal-info {
     width: 400px;
-    padding-left: 55px;
+    padding-left: 64px;
   }
 
   .personal-info__list {
@@ -105,7 +109,7 @@
   }
 
   .personal-info__input {
-    flex-grow: 1;
+    //flex-grow: 1;
     width: 312px;
   }
 }

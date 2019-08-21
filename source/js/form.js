@@ -12,19 +12,27 @@ var closeSendingModal = document.querySelector(".modal-sending__button");
 var errorModal = document.querySelector(".modal-error");
 var closeErrorModal = document.querySelector(".modal-error__button");
 
-var checkValue = function(input) {
+var validateInput = function(input) {
+  if (isEmpty(input)) {
+    return input.style.borderColor = "#e32636";
+  }
+  return input.style.borderColor = "#f2f2f2";
+};
+
+var isEmpty = function(input) {
   if (input.value === "") {
-    input.style.borderColor = "#e32636";
-    return false;
-  } else {
-    input.style.borderColor = "#f2f2f2";
     return true;
   }
+  return false;
 };
 
 form.addEventListener("submit", function(evt) {
   evt.preventDefault();
-  if (!checkValue(myName) || !checkValue(surname) || !checkValue(phone) || !checkValue(email)) {
+  validateInput(myName);
+  validateInput(surname);
+  validateInput(phone);
+  validateInput(email);
+  if (isEmpty(myName) || isEmpty(surname) || isEmpty(phone) || isEmpty(email)) {
     errorModal.classList.add("modal-error__show");
   } else {
     sendingModal.classList.add("modal-sending__show");

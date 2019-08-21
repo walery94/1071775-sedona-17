@@ -64,7 +64,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts-info">
+          <div class="main-form__wrapper">
+            <fieldset class="contacts-info">
             <legend class="contacts-info__title">Контактная информация:</legend>
             <ul class="contacts-info__list">
               <li class="contacts-info__item contacts-info__item--phone">
@@ -77,6 +78,7 @@
               </li>
             </ul>
           </fieldset>
+          </div>
           <fieldset class="impression-info">
             <legend class="impression-info__title">Ваше общее впечатление:</legend>
             <ul class="impression-info__list">
@@ -94,27 +96,29 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="attractions-info">
-            <legend class="attractions-info__title">Посещенные достопримечательности:</legend>
-            <ul class="attractions-info__list">
-              <li class="attractions-info__item">
-                <input class="attractions-info__input" type="checkbox" id="bridge" name="attractions" value="bridge" checked>
-                <label class="attractions-info__label" for="bridge">Мост Дьявола</label>
-              </li>
-              <li class="attractions-info__item">
-                <input class="attractions-info__input" type="checkbox" id="mount" name="attractions" value="mount" checked>
-                <label class="attractions-info__label" for="mount">Гора-Колокол</label>
-              </li>
-              <li class="attractions-info__item">
-                <input class="attractions-info__input" type="checkbox" id="park" name="attractions" value="park" checked>
-                <label class="attractions-info__label" for="park">Слайд-парк</label>
-              </li>
-              <li class="attractions-info__item">
-                <input class="attractions-info__input" type="checkbox" id="rocks" name="attractions" value="park">
-                <label class="attractions-info__label" for="rocks">Красные скалы</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="main-form__wrapper">
+            <fieldset class="attractions-info">
+              <legend class="attractions-info__title">Посещенные достопримечательности:</legend>
+              <ul class="attractions-info__list">
+                <li class="attractions-info__item">
+                  <input class="attractions-info__input" type="checkbox" id="bridge" name="attractions" value="bridge" checked>
+                  <label class="attractions-info__label" for="bridge">Мост Дьявола</label>
+                </li>
+                <li class="attractions-info__item">
+                  <input class="attractions-info__input" type="checkbox" id="mount" name="attractions" value="mount" checked>
+                  <label class="attractions-info__label" for="mount">Гора-Колокол</label>
+                </li>
+                <li class="attractions-info__item">
+                  <input class="attractions-info__input" type="checkbox" id="park" name="attractions" value="park" checked>
+                  <label class="attractions-info__label" for="park">Слайд-парк</label>
+                </li>
+                <li class="attractions-info__item">
+                  <input class="attractions-info__input" type="checkbox" id="rocks" name="attractions" value="park">
+                  <label class="attractions-info__label" for="rocks">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <p class="opinion-info">
             <label class="opinion-info__title">Опишите свои эмоции:</label>
             <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги" required></textarea>

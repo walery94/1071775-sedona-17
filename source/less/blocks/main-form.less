@@ -3,8 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #ffffff;
 }
 
@@ -15,6 +13,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 40px;
   font-size: 18px;
   font-weight: 700;
@@ -31,6 +31,8 @@
   margin-right: auto;
   padding: 0;
   padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -41,6 +43,8 @@
 
 .main-form__button {
   width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 21px;
 }
 
@@ -57,7 +61,11 @@
   .main-form__form {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: center;
+    justify-content: center;
+  }
+
+  .main-form__wrapper {
+    position: relative;
   }
 
   .main-form__review-title {
@@ -78,6 +86,7 @@
     width: 324px;
     margin-bottom: 50px;
     margin-right: 160px;
+    margin-left: 0;
   }
 
   .main-form__required-fields {
@@ -100,21 +109,24 @@
     width: 100%;
   }
 
+  .main-form__wrapper {
+    width: 960px;
+  }
+
   .main-form__review-title {
     padding-top: 125px;
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
   .main-form__review-paragraph {
     margin-bottom: 45px;
-    padding-left: 260px;
-    padding-right: 260px;
+    margin-left: 260px;
+    margin-right: 260px;
   }
 
   .main-form__button {
     width: 480px;
-    margin-left: 120px;
     margin-right: 310px;
   }
 }
