@@ -169,6 +169,10 @@
     padding: 0;
     padding-top: 47px;
     font-size: 21px;
+
+    &--gray {
+      padding-top: 42px;
+    }
   }
 
   .advantages__number {
@@ -185,7 +189,11 @@
   }
 
   .advantages__picture-wrapper {
-    height: 256px;
+    width: 100%;
+  }
+
+  .advantages__image {
+    height: 100%;
   }
 
   .advantages__line-break {
@@ -195,7 +203,7 @@
 
 @media (min-width: @desktop-width) {
   .advantages__inner-wrapper {
-    width: 400px;
+    width: 579px;
   }
 
   .advantages__item {
@@ -216,7 +224,7 @@
 
     &--gray {
       width: 150px;
-      padding-top: 47px;
+      padding-top: 44px;
     }
   }
 
@@ -237,10 +245,5 @@
     &:nth-child(2) {
       width: 279px;
     }
-  }
-
-  .advantages__image {
-    position: relative;
-    bottom: 70px;
   }
 }
