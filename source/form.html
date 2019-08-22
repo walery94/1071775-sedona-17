@@ -50,7 +50,7 @@
       <section class="main-form">
         <h2 class="main-form__review-title">Оставьте свой отзыв</h2>
         <p class="main-form__review-paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="main-form__form" novalidate>
+        <form class="main-form__form">
           <fieldset class="personal-info">
             <legend class="personal-info__title">Представьтесь:</legend>
             <ul class="personal-info__list">
@@ -124,7 +124,7 @@
             </fieldset>
           </div>
           <p class="opinion-info">
-            <label class="opinion-info__title">Опишите свои эмоции:</label>
+            <label class="opinion-info__title" for="opinion">Опишите свои эмоции:</label>
             <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги" required></textarea>
           </p>
           <input class="button main-form__button" type="submit" value="Отправить отзыв">
@@ -136,24 +136,24 @@
       <b class="main-footer__title">#visitsedona</b>
       <ul class="main-footer__list">
         <li class="main-footer__item">
-          <a class="main-footer__social-link main-footer__social-link--twitter" href="#">
+          <a class="main-footer__social-link main-footer__social-link--twitter" href="#" aria-label="Твиттер">
             <svg class="main-footer__social-icon" width="17.5px" height="14.663px"><use xlink:href="#sprite-icon-twitter"></use></svg>
           </a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__social-link main-footer__social-link--facebook" href="#">
+          <a class="main-footer__social-link main-footer__social-link--facebook" href="#" aria-label="Фэйсбук">
             <svg class="main-footer__social-icon" width="8.672px" height="18.944px"><use xlink:href="#sprite-icon-facebook"></use></svg>
           </a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__social-link main-footer__social-link--youtube" href="#">
+          <a class="main-footer__social-link main-footer__social-link--youtube" href="#" aria-label="Ютуб">
             <svg class="main-footer__social-icon" width="19.979px" height="14.015px"><use xlink:href="#sprite-icon-youtube"></use></svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__copyright">
         <b class="main-footer__developed">Разработано</b>
-        <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg class="main-footer__html-academy-logo" width="26.943px" height="34.09px"><use xlink:href="#sprite-logo-htmlacademy"></use></svg>
         </a>
       </div>

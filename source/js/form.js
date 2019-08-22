@@ -6,7 +6,7 @@ var surname = document.getElementById("surname");
 var phone = document.getElementById("phone");
 var email = document.getElementById("email");
 var patronymic = document.getElementById("patronymic");
-var textaria = document.getElementById("opinion");
+var textarea = document.getElementById("opinion");
 
 var sendingModal = document.querySelector(".modal-sending");
 var closeSendingModal = document.querySelector(".modal-sending__button");
@@ -33,7 +33,7 @@ form.addEventListener("submit", function(evt) {
   validateInput(surname);
   validateInput(phone);
   validateInput(email);
-  validateInput(textaria);
+  validateInput(textarea);
   if (isEmpty(myName) || isEmpty(surname) || isEmpty(phone) || isEmpty(email)) {
     errorModal.classList.add("modal-error__show");
   } else {
@@ -43,7 +43,7 @@ form.addEventListener("submit", function(evt) {
     phone.value = "";
     email.value = "";
     patronymic.value = "";
-    textaria.value = "";
+    textarea.value = "";
   }
 });
 
