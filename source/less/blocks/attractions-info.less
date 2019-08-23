@@ -1,7 +1,7 @@
 .attractions-info {
   width: 280px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 17px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -21,7 +21,7 @@
 
 .attractions-info__list {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: -13px;
   padding: 0;
   list-style: none;
 }
@@ -47,14 +47,10 @@
   }
 }
 
-.attractions-info__input {
-  display: none;
-}
-
 .attractions-info__input:checked + .attractions-info__label::after {
   content: "";
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 4px;
   width: 24px;
   height: 16px;
@@ -95,17 +91,19 @@
 
     &::before {
       left: 0;
+      margin-left: 20px;
     }
 
     &::after {
       right: 0;
+      margin-right: 20px;
     }
   }
 
   .attractions-info__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
     padding-left: 93px;
   }
 
@@ -149,14 +147,14 @@
 
     &::before,
     &::after {
-      width: 280px;
+      width: 260px;
     }
   }
 
   .attractions-info__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
     padding-left: 0;
   }
 

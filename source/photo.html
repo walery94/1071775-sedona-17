@@ -17,7 +17,9 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
+  <div class="wrapper">
     <header class="main-header">
+      <!-- класс navigation--open открывает меню -->
       <nav class="navigation navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -34,6 +36,7 @@
           </li>
         </ul>
       </nav>
+      <!-- класс main-header__toggle--close переключает внешний вид кнопки -->
       <button class="main-header__toggle main-header__toggle--no-js" type="button" aria-label="Открыть меню"></button>
       <a class="main-header__logo" href="index.html">
         <picture>
@@ -68,7 +71,9 @@
                 <h2 class="photo-gallery__title">Народные просторы</h2>
                 <p class="photo-gallery__paragraph">Автор фото: Борис</p>
               </div>
-              <button class="photo-gallery__likes">1350</button>
+              <div class="photo-gallery__likes-wrapper">
+                <button class="photo-gallery__likes">1350</button>
+              </div>
             </div>
           </li>
           <li class="photo-gallery__item photo-gallery__item--mini">
@@ -87,7 +92,9 @@
                 <h2 class="photo-gallery__title">Местная растительность</h2>
                 <p class="photo-gallery__paragraph">Автор фото: Сергей</p>
               </div>
-              <button class="photo-gallery__likes">143</button>
+              <div class="photo-gallery__likes-wrapper">
+                <button class="photo-gallery__likes">143</button>
+              </div>
             </div>
           </li>
           <li class="photo-gallery__item photo-gallery__item--dark-gray photo-gallery__item--mini">
@@ -106,7 +113,9 @@
                 <h2 class="photo-gallery__title">Дорога на север</h2>
                 <p class="photo-gallery__paragraph">Автор фото: Петр</p>
               </div>
-              <button class="photo-gallery__likes">96</button>
+              <div class="photo-gallery__likes-wrapper">
+                <button class="photo-gallery__likes">96</button>
+              </div>
             </div>
           </li>
           <li class="photo-gallery__item photo-gallery__item--mini">
@@ -125,7 +134,9 @@
                 <h2 class="photo-gallery__title">Мост дьявола</h2>
                 <p class="photo-gallery__paragraph">Автор фото: Антон</p>
               </div>
-              <button class="photo-gallery__likes">254</button>
+              <div class="photo-gallery__likes-wrapper">
+                <button class="photo-gallery__likes">254</button>
+              </div>
             </div>
           </li>
         </ul>
@@ -145,17 +156,17 @@
             </picture>
             <div class="video__scroll"></div>
             <div class="video__controls">
-              <button class="video__button">
+              <button class="video__button" aria-label="Кнопка replay">
                 <svg width="16px" height="20px">
                   <use class="video__replay-icon" xlink:href="#sprite-icon-video-replay"></use>
                 </svg>
               </button>
-              <button class="video__button">
+              <button class="video__button" aria-label="Кнопка субтитров">
                 <svg width="32px" height="20px">
                   <use class="video__subtitles-icon" xlink:href="#sprite-icon-video-subtitles"></use>
                 </svg>
               </button>
-              <button class="video__button">
+              <button class="video__button" aria-label="Кнопка fullscreen">
                 <svg width="20px" height="20px">
                   <use class="video__fullscreen-icon" xlink:href="#sprite-icon-video-fullscreen"></use>
                 </svg>
@@ -191,5 +202,6 @@
       </div>
     </footer>
   <script src="js/menu.js"></script>
+  </div>
   </body>
 </html>

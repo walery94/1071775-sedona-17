@@ -16,7 +16,9 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
+  <div class="wrapper">
     <header class="main-header">
+      <!-- класс navigation--open открывает меню -->
       <nav class="navigation navigation--no-js">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -33,6 +35,7 @@
           </li>
         </ul>
       </nav>
+      <!-- класс main-header__toggle--close переключает внешний вид кнопки -->
       <button class="main-header__toggle main-header__toggle--no-js" type="button" aria-label="Открыть меню"></button>
       <a class="main-header__logo" href="index.html">
         <picture>
@@ -73,9 +76,9 @@
             <legend class="contacts-info__title">Контактная информация:</legend>
             <ul class="contacts-info__list">
               <li class="contacts-info__item contacts-info__item--phone">
-                <label class="contacts-info__label" for="phone"><span class="contacts-info__hidden">Контактный</span> телефон*:</label>
-                <input class="contacts-info__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
-              </li>
+              <label class="contacts-info__label" for="phone"><span class="contacts-info__hidden">Контактный</span> телефон*:</label>
+              <input class="contacts-info__input" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+            </li>
               <li class="contacts-info__item contacts-info__item--email">
                 <label class="contacts-info__label" for="email">Электронная почта*:</label>
                 <input class="contacts-info__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
@@ -87,15 +90,15 @@
             <legend class="impression-info__title">Ваше общее впечатление:</legend>
             <ul class="impression-info__list">
               <li class="impression-info__item">
-                <input class="impression-info__input" type="radio" id="positive" name="impression" value="positive" checked>
+                <input class="impression-info__input visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
                 <label class="impression-info__label" for="positive">Скорее положительное</label>
               </li>
               <li class="impression-info__item">
-                <input class="impression-info__input" type="radio" id="negative" name="impression" value="negative">
+                <input class="impression-info__input visually-hidden" type="radio" id="negative" name="impression" value="negative">
                 <label class="impression-info__label" for="negative">Скорее отрицательное</label>
               </li>
               <li class="impression-info__item">
-                <input class="impression-info__input" type="radio" id="difficult" name="impression" value="difficult">
+                <input class="impression-info__input visually-hidden" type="radio" id="difficult" name="impression" value="difficult">
                 <label class="impression-info__label" for="difficult">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -105,19 +108,19 @@
               <legend class="attractions-info__title">Посещенные достопримечательности:</legend>
               <ul class="attractions-info__list">
                 <li class="attractions-info__item">
-                  <input class="attractions-info__input" type="checkbox" id="bridge" name="attractions" value="bridge" checked>
+                  <input class="attractions-info__input visually-hidden" type="checkbox" id="bridge" name="attractions" value="bridge" checked>
                   <label class="attractions-info__label" for="bridge">Мост Дьявола</label>
                 </li>
                 <li class="attractions-info__item">
-                  <input class="attractions-info__input" type="checkbox" id="mount" name="attractions" value="mount" checked>
+                  <input class="attractions-info__input visually-hidden" type="checkbox" id="mount" name="attractions" value="mount" checked>
                   <label class="attractions-info__label" for="mount">Гора-Колокол</label>
                 </li>
                 <li class="attractions-info__item">
-                  <input class="attractions-info__input" type="checkbox" id="park" name="attractions" value="park" checked>
+                  <input class="attractions-info__input visually-hidden" type="checkbox" id="park" name="attractions" value="park" checked>
                   <label class="attractions-info__label" for="park">Слайд-парк</label>
                 </li>
                 <li class="attractions-info__item">
-                  <input class="attractions-info__input" type="checkbox" id="rocks" name="attractions" value="park">
+                  <input class="attractions-info__input visually-hidden" type="checkbox" id="rocks" name="attractions" value="park">
                   <label class="attractions-info__label" for="rocks">Красные скалы</label>
                 </li>
               </ul>
@@ -128,7 +131,7 @@
             <textarea class="opinion-info__textarea" id="opinion" name="opinion" placeholder="Опишите подробно все свои восторги" required></textarea>
           </p>
           <input class="button main-form__button" type="submit" value="Отправить отзыв">
-          <p class="main-form__required-fields">* — Обязательные поля</p>
+          <p class="main-form__required-fields">* – Обязательные поля</p>
         </form>
       </section>
     </main>
@@ -174,5 +177,6 @@
   </section>
   <script src="js/form.js"></script>
   <script src="js/menu.js"></script>
+  </div>
   </body>
 </html>
