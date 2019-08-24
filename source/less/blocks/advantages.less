@@ -14,15 +14,20 @@
 
 .advantages__item {
   list-style: none;
-  border-bottom: 1px solid #d6d6d6;
 
   &--gray {
     background-color: #eeeeee;
   }
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.advantages__item--border::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d6d6d6;
 }
 
 .advantages__item:first-child {
@@ -157,10 +162,8 @@
     }
   }
 
-  .advantages__item:first-child {
-    &::before {
-      display: none;
-    }
+  .advantages__item--border::after {
+    display: none;
   }
 
   .advantages__title {
@@ -218,7 +221,7 @@
     width: 213px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 55px;
+    padding-top: 57px;
 
     &--bridge {
       width: 151px;
@@ -238,6 +241,10 @@
     &--bridge {
       width: 215px;
     }
+  }
+
+  .advantages__number--gray {
+    margin-bottom: 23px;
   }
 
   .advantages__paragraph--gray {
